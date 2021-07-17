@@ -1,13 +1,16 @@
-name: github pages
+name: Github Pages
 
 on:
   push:
     branches:
       - master
+  pull_request:
 
 jobs:
   deploy:
     runs-on: ubuntu-20.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v2
 
@@ -26,7 +29,7 @@ jobs:
 
       - run: npm ci
       - run: npm test
-      - run: npm run generate
+      - run: npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
