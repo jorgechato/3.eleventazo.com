@@ -9,14 +9,17 @@ Backend and DB with `firebase` to fast prototype and delivery.
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
-npm install
+$ npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-# build for production with minification
-npm run build
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
 ```
-
