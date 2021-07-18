@@ -10,32 +10,41 @@
 
     <ul>
       <li>
-        Calendar event
+        <countdown/>
       </li>
       <li>
-        Ticket type
+        <event-info/>
       </li>
       <li>
-        Whatsapp channel
-      </li>
-      <li>
-        Time till the event
+        <ticket/>
       </li>
       <li>
         What do you need to bring
       </li>
       <li>
-        Price
+        <invitation-voucher/>
       </li>
       <li>
-        Link to invite with your code /waiting&code=(name.surname hashed)
-      </li>
-      <li>
-        Number of invitations left
-      </li>
-      <li>
-        Invitation list and status
+        <invitation-list/>
       </li>
     </ul>
   </section>
 </template>
+
+<script>
+import InvitationVoucher from '~/components/Invitation/Voucher'
+import InvitationList from '~/components/Invitation/List'
+import Ticket from '~/components/Ticket'
+import EventInfo from '~/components/EventInfo'
+import Countdown from '~/components/Countdown'
+
+export default {
+  components: {
+    'invitation-list': InvitationList,
+    'invitation-voucher': InvitationVoucher,
+    'ticket': Ticket,
+    'event-info': EventInfo,
+    'countdown': Countdown,
+  },
+}
+</script>
