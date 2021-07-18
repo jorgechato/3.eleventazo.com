@@ -10,41 +10,33 @@
 
     <ul>
       <li>
+        <event-info/>
+      </li>
+      <li>
         Release location
       </li>
       <li>
-        Ticket type
-        <ul>
-          <li>
-            Update Price
-          </li>
-          <li>
-            Release Price
-          </li>
-          <li>
-            Update Whatsapp group
-          </li>
-        </ul>
+        <ticket-list/>
       </li>
       <li>
-        Invitation list
-        <ul>
-          <li>
-            Status
-          </li>
-          <li>
-            Update invitation number
-          </li>
-          <li>
-            Generate login link
-
-            /info&login=(name.surname.random hashed)
-          </li>
-          <li>
-            Approve invite
-          </li>
-        </ul>
+        <invitation-list/>
       </li>
     </ul>
+
+    * Redirect to / if you are not logged in
   </section>
 </template>
+
+<script>
+import InvitationList from '~/components/Admin/Invitation/List'
+import TicketList from '~/components/Admin/Ticket/List'
+import EventInfo from '~/components/EventInfo'
+
+export default {
+  components: {
+    'invitation-list': InvitationList,
+    'ticket-list': TicketList,
+    'event-info': EventInfo,
+  },
+}
+</script>

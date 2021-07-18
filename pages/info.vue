@@ -28,6 +28,8 @@
         <invitation-list/>
       </li>
     </ul>
+
+    * Redirect to / if you are not logged in
   </section>
 </template>
 
