@@ -1,12 +1,14 @@
 <template>
   <section>
-    Ticket
     <ul>
       <li>
         Type
       </li>
       <li>
-        Price
+        Price/Update Price
+      </li>
+      <li>
+        Release Price
       </li>
       <li>
         Whatsapp channel
@@ -14,3 +16,9 @@
     </ul>
   </section>
 </template>
+
+<script>
+export default {
+  name: 'Ticket',
+}
+</script>

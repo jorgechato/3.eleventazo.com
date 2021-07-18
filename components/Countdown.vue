@@ -6,7 +6,7 @@
         Time till the event
       </li>
       <li>
-        Calendar event
+        Calendar event if calendar true (to remove it from landing page)
       </li>
     </ul>
   </section>
