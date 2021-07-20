@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+  font-family: "Billionaire";
+  src: url(~assets/font/BillionaireMediumGrunge.ttf) format("truetype");
+}
+
+:root {
+  --gold: #ffdf00;
+  --silver: #d3d3d3;
+  --black: #000;
+  --dark: #111;
+  --light: #f8f8ff;
+
+  --accent-color: var(--gold);
+  --primary: var(--accent-color);
+  --bg: var(--dark);
+  --color: var(--silver);
+  --color-primary: var(--accent-color);
+  --color-link: var(--accent-color);
+  --color-link-hover: var(--accent-color);
+
+  --font-size: 20px;
+}

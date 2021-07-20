@@ -1,36 +1,42 @@
 <template>
   <section>
     <logo/>
-    <countdown/>
 
-    <h1>
-      Landing page
-    </h1>
+    <NuxtLink to="/games" v-if="status=='a' || status=='p'">
+    Juegos
+    </NuxtLink>
+    <NuxtLink to="/info" v-if="status=='a' || status=='p'">
+    Ticket
+    </NuxtLink>
+    <div v-if="status=='p'">
+      Estamos valorando tu invitación, vuelve más tarde para comprobar si has sido aceptad@.
+    </div>
+    <div v-else class="small">
+      * Si ya estas en el grupo de whatsapp y no puedes acceder a la info del evento, pide ayuda a los admins.
+    </div>
 
-    <ul>
-      <li>
-        if you are logged in and invited show info button
-      </li>
-      <li>
-        if you are logged in but not accepted, display banner and hide info button
-      </li>
-      <li>
-        if you are not logged in show waitlist button
-      </li>
-    </ul>
-
-    * Logged in information in cookies or local storage
   </section>
 </template>
 
 <script>
 import Logo from '~/components/Logo'
-import Countdown from '~/components/Countdown'
 
 export default {
+  auth: false,
   components: {
     'logo': Logo,
-    'countdown': Countdown,
+  },
+  async asyncData({ app }) {
+    return {
+      loggedIn: app.$storage.getUniversal('toke') != undefined,
+      status: app.$storage.getUniversal('status'),
+    };
   },
 }
 </script>
+
+<style scoped>
+.small {
+  font-size: .7em;
+}
+</style>
