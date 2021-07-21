@@ -128,6 +128,16 @@ PERFORMANCE OF THIS SOFTWARE.
 
 
 /*!
+ * vue-countdown v1.1.5
+ * https://fengyuanchen.github.io/vue-countdown
+ *
+ * Copyright 2018-present Chen Fengyuan
+ * Released under the MIT license
+ *
+ * Date: 2020-02-25T01:19:32.769Z
+ */
+
+/*!
  * vue-nav-tabs v0.5.7
  * (c) 2018-present cristij <joracristi@gmail.com>
  * Released under the MIT License.
@@ -164,23 +174,6 @@ and limitations under the License.
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
-
-
-/*!
- * vue-countdown v1.1.5
- * https://fengyuanchen.github.io/vue-countdown
- *
- * Copyright 2018-present Chen Fengyuan
- * Released under the MIT license
- *
- * Date: 2020-02-25T01:19:32.769Z
- */
-
-/*!
- * vue-nav-tabs v0.5.7
- * (c) 2018-present cristij <joracristi@gmail.com>
- * Released under the MIT License.
  */
 
 
